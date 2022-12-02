@@ -75,3 +75,7 @@ th {
   font-size: 13px;
   color: #B5B5C3;
 }
+
+.table-cell-status {
+  padding: 6px 10px;
+}

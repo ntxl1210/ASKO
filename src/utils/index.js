@@ -130,7 +130,16 @@ export const columns = [
     key: 'status',
     title: 'Status',
     width: 100,
-    render: (_, { status }) => <span>{status}</span>,
+    render: (_, { status }) => (
+      <span
+        className="table-cell-status"
+        style={{
+          background: status === 'approved' ? '#F4FFF3' : '#FFE2E5',
+          color: status === 'approved' ? '#5F8D4E' : '#F64E60',
+        }}>
+        {status === 'approved' ? 'Approved' : 'Declined'}
+      </span>
+    ),
   },
   {
     key: 'action',
