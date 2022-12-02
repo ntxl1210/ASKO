@@ -4,10 +4,3 @@
     font-weight: 600;
     font-size: 16px;
 }
-
-.container:first-child::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    background-color: white;
-}
