@@ -57,6 +57,12 @@ th {
   display: flex;
   flex-direction: row;
   gap: 8px;
+  align-items: center;
+}
+
+.table-cell-info-container img {
+  width: 40px;
+  height: 40px;
 }
 
 .table-cell-info-subcontainer {

@@ -96,7 +96,7 @@ export const columns = [
   {
     key: 'name',
     title: 'Name',
-    width: 300,
+    width: 400,
     render: (_, { name, gender, cn }) => (
       <div className="table-cell-info-container">
         <img src={gender === 'male' ? boy : girl} alt={gender} />
