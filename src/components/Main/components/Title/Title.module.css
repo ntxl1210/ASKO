@@ -11,6 +11,30 @@
     gap: 8px;
 }
 
-.rightTitle {
-
+.title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #212121;
 }
+
+.subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    color: #B5B5C3;
+}
+
+.addBtn {
+    padding: 10px 20px;
+    gap: 10px;
+    display: flex;
+    background: #5F8D4E;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightTitle {}

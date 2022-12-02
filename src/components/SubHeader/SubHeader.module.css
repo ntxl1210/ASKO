@@ -3,13 +3,19 @@
     flex-direction: row;
     gap: 8px;
     padding: 16px 100px;
+    box-shadow: 0px 5px 8px rgba(70, 78, 95, 0.02);
 }
 
 .subHeaderItem {
     padding: 12px 32px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #C9C9C9;
+
 }
 
 .subHeaderItem:first-child {
     border-radius: 6px;
     background: #F4FFF3;
+    color: #5F8D4E;
 }
