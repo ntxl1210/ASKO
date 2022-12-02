@@ -1,0 +1,15 @@
+.rowItem {
+    cursor: auto;
+}
+
+/* .rowItem:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.rowItem:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+.rowItem:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+} */
