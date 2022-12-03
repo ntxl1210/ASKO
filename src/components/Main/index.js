@@ -7,8 +7,10 @@ import classes from './Main.module.css';
 export default function Main() {
   return (
     <div className={classes.container}>
-      <Title />
-      <Table columns={columns} data={data} />
+      <div className={classes.content}>
+        <Title />
+        <Table columns={columns} data={data} />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import boy from '../assets/boy.png';
 import girl from '../assets/girl-16.png';
+import action from '../assets/Right-2.png';
 
 export const data = [
   {
@@ -95,7 +96,7 @@ export const columns = [
   {
     key: 'name',
     title: 'Name',
-    width: 300,
+    width: 400,
     render: (_, { name, gender, cn }) => (
       <div className="table-cell-info-container">
         <img src={gender === 'male' ? boy : girl} alt={gender} />
@@ -125,6 +126,12 @@ export const columns = [
     key: 'dateAdded',
     title: 'Date added',
     width: 200,
+    render: (_, { dateAdded, timeAdded }) => (
+      <div className="table-cell-date-container">
+        <span className="table-cell-date-added">{dateAdded}</span>
+        <span className="table-cell-time-added">{timeAdded}</span>
+      </div>
+    ),
   },
   {
     key: 'status',
@@ -146,13 +153,13 @@ export const columns = [
     title: '',
     width: 50,
     render: (_, item) => (
-      <>
-        <button>-></button>
-      </>
+      <button className="table-cell-action">
+        <img src={action} alt="action" />
+      </button>
     ),
   },
 ];
 
-export const navbar = ['Users', 'Patients', 'Hospitals', 'Notice'];
+export const navbar = ['Users', 'Patients', 'Hospitals', 'Notice', 'Help Center'];
 
 export const subHeader = ['Doctors', 'Adminstration', 'Accounts', 'more'];

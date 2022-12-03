@@ -1,14 +1,18 @@
 import classes from './Title.module.css';
+import addIcon from '../../../../assets/Add-user.png';
 
 export default function Title() {
   return (
     <div className={classes.container}>
       <div className={classes.leftTitle}>
-        <span>List of doctors</span>
-        <span>345 available doctors</span>
+        <span className={classes.title}>List of doctors</span>
+        <span className={classes.subtitle}>345 available doctors</span>
       </div>
       <div>
-        <button>Add new doctor</button>
+        <button className={classes.addBtn}>
+          <img src={addIcon} alt="add icon" />
+          Add new doctor
+        </button>
       </div>
     </div>
   );
